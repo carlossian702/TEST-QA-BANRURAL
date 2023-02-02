@@ -76,6 +76,7 @@
       if(userGuess < randomNumber) {
         lowOrHi.textContent = 'El número es mayor!';
       } else if(userGuess > randomNumber) {
+
         lowOrHi.textContent = 'El número es menor!';
       }
     }
@@ -84,7 +85,7 @@
     guessField.value = '';
     guessField.focus();
   }
-  guessSubmit.addeventListener('click', checkGuess);
+  guessSubmit.addEventListener('click', checkGuess);
 
   function setGameOver() {
 	  guessField.disabled = true;
@@ -92,7 +93,7 @@
 	  resetButton = document.createElement('button');
 	  resetButton.textContent = 'Comienza un nuevo juego';
 	  document.body.appendChild(resetButton);
-	  resetButton.addeventListener('click', resetGame);
+	  window.addEventListener('load', resetGame);
   }
 
   function resetGame() {
@@ -115,3 +116,4 @@
   }
 </script>
 </html>
+
