@@ -1,0 +1,4 @@
+- como primer punto se verifico el error que no estaba haciendo la conexion del boton "ingresar el numero aleatorio" ya que cuando se ingresaba un numero no funcionaba el boton
+    - esto fue solucionado mediante el comando addEventListener este estaba mal escrito asi que no lo reconocia la pagina.
+- despues de esto tambien se verifico que no reconoce si el numero es mayor de 100 o menor que 1
+- tambien se verifico que no muestra el mensaje perdistes o ganastes ya que nunca se almacenan los 10 numeros ingresados por el usuario 
